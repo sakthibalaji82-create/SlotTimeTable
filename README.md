@@ -25,135 +25,139 @@ Execute the program using runserver command.
 
 ## PROGRAM
 ```
+slot_time_table.html
 <!DOCTYPE html>
-<!-- saved from url=(0029)http://127.0.0.1:5500/tt.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  </head><body><img src="./Slot Time Table_files/sec-logo-01as.png" alt="top image" width="50%" height="20%">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Time Table</title>
+    <style>
+        table, th, td
+        {
+            border: 2px solid;
+            text-align: center;
+            padding: 6px;
+        }
+        table{
+            width: 80%;
+            margin-left: 10%;
+        }
+        h3{
+            text-align: center;
+        }
+        #time{
+            background-color: yellow;
+        }
+        #time_table{
+            background-color: aqua;
+        }
+        img{
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" width="100%" height="150px" alt="Saveetha Engineering College"/>
+    <h3>SLOT TIME TABLE</h3>
+    <table>
+        <thead>
+            <tr style="background-color: yellow;">
+                <th>Day/Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thrusday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody id="time_table">
+            <tr>
+                <td id="time">8-10</td>
+                <td colspan="3">FREE SLOT</td>
+                <td>PHY</td>
+                <td>CHE</td>
+            </tr>
+            <tr>
+                <td id="time">10-12</td>
+                <td>GRE</td>
+                <td>FREE SLOT</td>
+                <td>FWAD</td>
+                <td>FWAD</td>
+                <td>PHY</td>
+            </tr>
+            <tr>
+                <td id="time">12-1</td>
+                <td colspan="5">LUNCH</td>
+            </tr>
+            <tr>
+                <td id="time">1-3</td>
+                <td colspan="2">FREE SLOT</td>
+                <td>MAT</td>
+                <td>MAT</td>
+                <td>SS</td>
+            </tr>
+            <tr>
+                <td id="time">3-5</td>
+                <td colspan="2">FREE SLOT</td>
+                <td>GRE</td>
+                <td>CHE</td>
+                <td>FWAD</td>
+            </tr>
+        </tbody>
+    </table>
 
-  <title>Slot Time Table</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
-      background-color:aliceblue;
-    }
+    <div style="padding-top: 2%;">
+        <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Subject Code</th>
+                <th>Subject Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>19AI414</td>
+                <td>Fundamentals of Web Appliaction Development</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>19EN612</td>
+                <td>German Basics</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>19PH206</td>
+                <td>Physics for Information Technology</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>19CY205</td>
+                <td>Principle of chemistry in Engineering</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>19MA201</td>
+                <td>Calculas and Matrix Algebra</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>19EY701</td>
+                <td>Soft Skill  </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</body>
+</html>
 
-    h2 {
-      text-align: center;
-    }
 
-    table {
-      width: 75%;
-      border-collapse: collapse;
-      background-color:(215, 236, 20)lightcoral
-    }
-
-    th, td {
-      border: 1px solid#452992;
-      padding: 12px;
-      text-align: center ;
-    }
-
-    th {
-      background-color:plum;
-      color: purple (201, 17, 109);
-    }
-
-    td {
-      height: 60px;
-    }
-    tr:nth-child(even)td{
-        background-color: aqua;
-    }
-    
-</style>
-
-<h2> Slot Time Table-Maha lakshmi M (25015887)</h2>
-
-<table>
-  <tbody><tr>
-    <th>Time Slot</th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-    <th>Saturday</th>
-  </tr>
-  <tr>
-    <td>8:00 - 10:00</td>
-    <td>Web</td>
-    <td>cryp</td>
-    <td>Web</td>
-    <td>-</td>
-    <td>-</td>
-    <td>Cryp</td>
-  </tr>
-  <tr>
-    <td>10:00 - 12:00</td>
-    <td>Web</td>
-    <td>Cryp</td>
-    <td>Web</td>
-    <td>-</td>
-    <td>Python</td>
-     <td>Cryp</td>
-  </tr>
-     <tr>
-    <td>12:00 - 1:00</td>
-    <td colspan="6">Lunch Break</td>
-  </tr>
-  <tr>
-    <td>1:00 - 3:00</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>cryp</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>3:00 - 5:00</td>
-    <td>-</td>
-    <td>-</td>
-    <td>Python</td>
-    <td>Python</td>
-    <td>Python</td>
-    <td>-</td>
-  </tr>
-
-  </tbody></table><!-- Code injected by live-server -->
- <table>
-    
-  <h1>Course Details</h1>
-    <tr>
-      <th>S.No</th>
-      <th>Code</th>
-      <th>Course</th>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>CS3301</td>
-      <td>Python programming</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>19AI414</td>
-      <td>Fundamental of web application development</td>
-      </tr>
-    <tr>
-      <td>3</td>
-      <td>19CS547</td>
-      <td>Fundamental of crypto currency</td>
-    </tr>
-
-    </tbody>
-  </table>
-<script>
 ```
 
 ## OUTPUT
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/733f921d-3d3e-4b09-95a2-05ec6c24f2f3" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f5a5bd7c-4046-4f43-afed-dd226c76dc17" />
+![alt text]({70BFD6F7-1A53-4831-A54F-C3BC4064216C}.png)
 
 
 INCLUDE YOUR OUTPUT IMAGE
